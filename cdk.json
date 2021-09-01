@@ -15,6 +15,7 @@
     "@aws-cdk/aws-lambda:recognizeVersionProps": true,
     "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
     "name": "DevEnv",
-    "instance_type": "t3.medium"
+    "instance_type": "t3.medium",
+    "image_id": "amazonlinux-2-x86_64"
   }
 }

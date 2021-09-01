@@ -19,6 +19,7 @@ export class Cloud9CdkStack extends cdk.Stack {
     new cloud9.CfnEnvironmentEC2(this, 'Cloud9Env', {
        name: this.node.tryGetContext("name"),
        instanceType: this.node.tryGetContext("instance_type"),
+       imageId: this.node.tryGetContext("image_id"),
        automaticStopTimeMinutes: 60,
        connectionType: "CONNECT_SSM",
     });
